@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section("title","SpaceEtablisement | Stagiaire")
 @section('content')
+
 <div class="container pt-2">
         <div class="table-wrapper table-dark pt-4">
         <div align="center" class="alert " style="display:none;" id=divAlert>
@@ -20,7 +21,7 @@
                     </div>
                 </div>
             </div>
-            <table class="table table-striped table-hover" style="color:white">
+            <table id="datatable" class="table table-striped table-hover" style="color:white">
                 <thead>
                     <tr>
                         <th align="center" style="height: 13px;padding-bottom: 10px;padding-left: 12px;padding-top: 0px;border-bottom-width: 2px;width: 41px;border-top-width: 1px;">

@@ -76,15 +76,16 @@
                                     <div class="form-group row">
                                         <label class="col-4 col-form-label">Moyenne</label>
                                         <div class="col-8">
-                                            <input id="result" placeholder="Result *" type="text" class="form-control here" name="nom" Disabled autocomplete="result" value='{{Auth::user()->stagiaire->result ? Auth::user()->stagiaire->result + "/20" : "?/20"}}' >                                            
+                                            <input id="result" placeholder="Result *" type="text" class="form-control here" name="nom" Disabled autocomplete="result" value='{{Auth::user()->stagiaire->result ? Auth::user()->stagiaire->result . "/20" : "?/20"}}' >                                            
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-4 col-form-label">Heures d'absence</label>
                                         <div class="col-8">
-                                            <input id="heures_absence" placeholder="Heures Absence *" type="text" class="form-control here" name="heures_absence" Disabled autocomplete="heures_absence" value='{{Auth::user()->stagiaire->heures_absence ==null? Auth::user()->stagiaire->heures_absence + "Heure(s)" : "zero Absence"}}' >                                            
+                                            <input id="heures_absence" placeholder="Heures Absence *" type="text" class="form-control here" name="heures_absence" Disabled autocomplete="heures_absence" value='{{Auth::user()->stagiaire->heures_absence ==null? Auth::user()->stagiaire->heures_absence . "Heure(s)" : "zero Absence"}}' >                                            
                                         </div>
                                     </div>
+                                    
                                     @endif
                                     @if(Auth::user()->formateur)
                                     <div class="form-group row">
